@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地球科學與自製地震儀 - 期末報告時程表</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 基礎全域設定 */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f3f4f6; /* 淺灰色背景 */
+            color: #334155;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 主容器：白底卡片設計 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 標題設計 */
+        h1 {
+            color: #1e40af; /* 深藍色 */
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        /* 資訊區塊 (Info Box) */
+        .info-box {
+            background-color: #eff6ff; /* 淡藍色背景 */
+            padding: 20px 25px;
+            border-radius: 8px;
+            border-left: 5px solid #3b82f6; /* 左側藍色強調線 */
+            margin-bottom: 30px;
+        }
+
+        .info-box ul {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+        }
+
+        /* 表格設計 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 1.05em;
+        }
+
+        th, td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: #475569;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        tr:hover {
+            background-color: #f1f5f9; /* 滑鼠移過時的底色 */
+        }
+
+        /* 特殊列高亮標示 */
+        .highlight-break {
+            background-color: #fef08a !important; /* 中場休息黃色 */
+            font-weight: bold;
+            color: #854d0e;
+        }
+
+        .highlight-end {
+            background-color: #dcfce3 !important; /* 結語綠色 */
+            font-weight: bold;
+            color: #166534;
+        }
+
+        /* RWD 響應式設計：在手機螢幕下的微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            table {
+                font-size: 0.9em;
+            }
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎓 期末報告時程表與注意事項</h1>
+    <p style="text-align: center; color: #64748b;">地球科學與 Raspberry Pico 自製地震儀專案</p>
+
+    <div class="info-box">
+        <h2>📌 報告資訊</h2>
+        <ul>
+            <li><strong>報告時間：</strong> 每人 5 分鐘報告 + 1 分鐘老師提問（共計 6 分鐘）。</li>
+            <li><strong>總排程：</strong> 09:15 - 11:50（包含 15 分鐘中場休息與最後緩衝時間）。</li>
+            <li><strong>報告內容涵蓋（兩大主題）：</strong>
+                <ol>
+                    <li><strong>Raspberry Pico 自製地震儀專案介紹</strong></li>
+                    <li><strong>整學期的學習回顧</strong>，可參考以下課程亮點進行分享：
+                        <ul>
+                            <li>開發環境與工具：GitHub, Huggingface, Gemini, NotebookLM 等。</li>
+                            <li>地震學理論：地球構造、地震波特性、應力與應變、震源機制等。</li>
+                            <li>實務與參訪：校園野外實驗地震儀安裝、國家地震工程研究中心參訪。</li>
+                            <li>專家演講分享：張睿明博士（AI 在地科的應用）、宋冠毅博士（地震觀測系統介紹）。</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <h2>📅 報告時程與順序名單</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>順序</th>
+                <th>時間區間</th>
+                <th>報告人</th>
+                <th>備註</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>01</td><td>09:15 - 09:21</td><td><strong>洪敏書</strong></td><td></td></tr>
+            <tr><td>02</td><td>09:21 - 09:27</td><td><strong>陳佑昇</strong></td><td></td></tr>
+            <tr><td>03</td><td>09:27 - 09:33</td><td><strong>林宜諠</strong></td><td></td></tr>
+            <tr><td>04</td><td>09:33 - 09:39</td><td><strong>黃靖家</strong></td><td></td></tr>
+            <tr><td>05</td><td>09:39 - 09:45</td><td><strong>林靖融</strong></td><td></td></tr>
+            <tr><td>06</td><td>09:45 - 09:51</td><td><strong>何宣樂</strong></td><td></td></tr>
+            <tr><td>07</td><td>09:51 - 09:57</td><td><strong>劉韋伯</strong></td><td></td></tr>
+            <tr><td>08</td><td>09:57 - 10:03</td><td><strong>曾柏凱</strong></td><td></td></tr>
+            <tr><td>09</td><td>10:03 - 10:09</td><td><strong>邵雅涓</strong></td><td></td></tr>
+            <tr><td>10</td><td>10:09 - 10:15</td><td><strong>蕭筠安</strong></td><td></td></tr>
+            
+            <tr class="highlight-break">
+                <td>☕</td>
+                <td>10:15 - 10:30</td>
+                <td>中場休息</td>
+                <td>休息 15 分鐘 / 下半場準備</td>
+            </tr>
+
+            <tr><td>11</td><td>10:30 - 10:36</td><td><strong>邱定軒</strong></td><td></td></tr>
+            <tr><td>12</td><td>10:36 - 10:42</td><td><strong>陳亞歆</strong></td><td></td></tr>
+            <tr><td>13</td><td>10:42 - 10:48</td><td><strong>李政暟</strong></td><td></td></tr>
+            <tr><td>14</td><td>10:48 - 10:54</td><td><strong>張智詠</strong></td><td></td></tr>
+            <tr><td>15</td><td>10:54 - 11:00</td><td><strong>林煜宸</strong></td><td></td></tr>
+            <tr><td>16</td><td>11:00 - 11:06</td><td><strong>楊廂甯</strong></td><td></td></tr>
+            <tr><td>17</td><td>11:06 - 11:12</td><td><strong>鍾秉致</strong></td><td></td></tr>
+            <tr><td>18</td><td>11:12 - 11:18</td><td><strong>黃勝彥</strong></td><td></td></tr>
+            <tr><td>19</td><td>11:18 - 11:24</td><td><strong>林幼鎂</strong></td><td></td></tr>
+            <tr><td>20</td><td>11:24 - 11:30</td><td><strong>陳柏亘</strong></td><td></td></tr>
+            
+            <tr class="highlight-end">
+                <td>結語</td>
+                <td>11:30 - 11:50</td>
+                <td>總結與緩衝時間</td>
+                <td>課程總結、評分計算與大合照</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
